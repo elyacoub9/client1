@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jakom Café | Artisanal Coffee & Pastries in a Warm, Modern Space</title>
+        
+        <meta name="keywords" content="Specialty Coffee, Artisanal Pastries, Brunch, Coffee Shop, Organic, Local, Coffee Roaster, Breakfast, Light Meals, Third Wave Coffee">
+        <meta name="description" content="Jakom Café | Artisanal coffee, house-made pastries, and light meals in a warm, modern space designed for community and connection.">
+        
+        <link rel="icon" href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+        
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="site-logo">
+                    <a href="#home">Jakom Café</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="site-nav">
+                    <ul class="site-nav-menu">
+                        <li><a href="#home" class="site-nav-link active">Home</a></li>
+                        <li><a href="#about" class="site-nav-link">About</a></li>
+                        <li><a href="#menu" class="site-nav-link">Menu</a></li>
+                        <li><a href="#localisation" class="site-nav-link">Localisation</a></li>
+                        <li><a href="#hours" class="site-nav-link">Hours</a></li>
+                        <li><a href="#gallery" class="site-nav-link">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu Backdrop -->
+        <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <button class="close-menu" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <ul class="mobile-nav-menu">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+                <li><a href="#localisation" class="mobile-nav-link">Localisation</a></li>
+                <li><a href="#hours" class="mobile-nav-link">Hours</a></li>
+                <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+            </ul>
+        </div>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Jakom Café</h1>
+                <p>Artisanal coffee, house-made pastries, and light meals in a warm, modern space designed for community and connection.</p>
+                <div class="hero-cta">
+                    <a href="#menu" class="btn">View Our Menu</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Split Section 1 -->
+        <section class="c-split c-split--vcenter" id="about">
+            <div class="c-split__col">
+                <div class="c-split__col-inner">
+                    <div class="c-split__content">
+                        <h1><a href="#about">Our Story</a></h1>
+                        <p>Founded in 2015, Jakom began as a small corner shop with a simple mission: to serve exceptional coffee in a welcoming space. Today, we've grown into a community hub where coffee lovers, students, and professionals gather to connect and create.</p>
+                        <p>We're passionate about ethically sourced beans, expertly roasted to bring out their unique flavors. Every drink is crafted with care by our trained baristas.</p>
+                        <a href="#about" class="btn" style="margin-top: 20px; align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-split__col">
+                <div class="c-split__col-inner">
+                    <div class="c-split__image" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <h2 class="section-heading">Our Menu</h2>
+                
+                <div class="menu-categories">
+                    <button class="menu-category active" data-category="coffee">Coffee</button>
+                    <button class="menu-category" data-category="tea">Tea</button>
+                    <button class="menu-category" data-category="pastries">Pastries</button>
+                    <button class="menu-category" data-category="food">Food</button>
+                </div>
+                
+                <div class="menu-items">
+                    <!-- Coffee Items -->
+                    <div class="menu-item active" data-category="coffee">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Jakom Espresso</h3>
+                            <span class="menu-item-price">$3.50</span>
+                        </div>
+                        <p class="menu-item-desc">Rich and bold, our signature espresso made from single-origin Ethiopian beans.</p>
+                    </div>
+                    
+                    <div class="menu-item active" data-category="coffee">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Classic Cappuccino</h3>
+                            <span class="menu-item-price">$4.25</span>
+                        </div>
+                        <p class="menu-item-desc">Perfectly balanced espresso with steamed milk and a thick layer of microfoam.</p>
+                    </div>
+                    
+                    <div class="menu-item active" data-category="coffee">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Vanilla Bean Latte</h3>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-desc">Smooth espresso with steamed milk and house-made vanilla bean syrup.</p>
+                    </div>
+                    
+                    <!-- Tea Items -->
+                    <div class="menu-item" data-category="tea">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Spiced Chai Latte</h3>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <p class="menu-item-desc">Aromatic blend of black tea, spices, and steamed milk. Dairy alternatives available.</p>
+                    </div>
+                    
+                    <div class="menu-item" data-category="tea">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Jasmine Green Tea</h3>
+                            <span class="menu-item-price">$3.50</span>
+                        </div>
+                        <p class="menu-item-desc">Delicate green tea scented with jasmine flowers, served hot or iced.</p>
+                    </div>
+                    
+                    <!-- Pastries -->
+                    <div class="menu-item" data-category="pastries">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Butter Croissant</h3>
+                            <span class="menu-item-price">$3.75</span>
+                        </div>
+                        <p class="menu-item-desc">Flaky, buttery, and baked fresh every morning. Perfect with any coffee.</p>
+                    </div>
+                    
+                    <div class="menu-item" data-category="pastries">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Double Chocolate Muffin</h3>
+                            <span class="menu-item-price">$4.25</span>
+                        </div>
+                        <p class="menu-item-desc">Rich chocolate muffin loaded with chocolate chips. A chocolate lover's dream.</p>
+                    </div>
+                    
+                    <!-- Food -->
+                    <div class="menu-item" data-category="food">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Avocado Toast</h3>
+                            <span class="menu-item-price">$9.50</span>
+                        </div>
+                        <p class="menu-item-desc">Sourdough toast with smashed avocado, cherry tomatoes, microgreens, and chili flakes.</p>
+                    </div>
+                    
+                    <div class="menu-item" data-category="food">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Breakfast Sandwich</h3>
+                            <span class="menu-item-price">$8.75</span>
+                        </div>
+                        <p class="menu-item-desc">Egg, cheddar, and your choice of bacon or sausage on a brioche bun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2 class="section-heading">Gallery</h2>
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Take a visual journey through our space, our craft, and the moments that make Jakom special.
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jakom Café interior">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee being prepared">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab794f27d2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Fresh pastries">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Breakfast plate">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee bar">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1570196915096-558b0b5a39da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cappuccino art">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Localisation Section -->
+        <section class="content-section content-section--light" id="localisation">
+            <div class="content-section__inner">
+                <h2 class="section-heading">Localisation</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Find us in the heart of the city, nestled between historic buildings and modern architecture. Our café is easily accessible by public transport and offers street parking nearby.
+                </p>
+                
+                <div style="text-align: center;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary-brown);">Address</h3>
+                    <p style="font-size: 1.3rem; margin-bottom: 30px;">
+                        <a href="https://maps.google.com/?q=123+Coffee+Street+Cityville" target="_blank" style="color: var(--accent-gold);">
+                            123 Coffee Street, Cityville
+                        </a>
+                    </p>
+                    
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary-brown);">Getting Here</h3>
+                    <p style="margin-bottom: 15px;"><strong>By Metro:</strong> Take the Blue Line to Cityville Central Station, then walk 5 minutes north on Coffee Street.</p>
+                    <p style="margin-bottom: 15px;"><strong>By Bus:</strong> Routes 12, 24, and 36 stop within one block of our location.</p>
+                    <p style="margin-bottom: 30px;"><strong>Parking:</strong> Street parking is available on Coffee Street and nearby side streets. A paid parking garage is located two blocks away on Market Street.</p>
+                    
+                    <div style="background-color: var(--white); padding: 30px; margin-top: 40px; box-shadow: var(--shadow);">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary-brown);">Map</h3>
+                        <div style="text-align: center;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.0292677198468!2d-7.675041724256463!3d33.526624673359464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62d004c5b1961%3A0xd9d29948e09810c0!2sDyar%20Lissasfa!5e0!3m2!1sen!2sma!4v1767212266661!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Hours Section -->
+        <section class="hours-section" id="hours">
+            <div class="container">
+                <h2 class="section-heading">Hours</h2>
+                <div class="hours-container">
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span class="hour-day">Monday – Friday</span>
+                            <span class="hour-time">7:00 AM – 8:00 PM</span>
+                        </div>
+    
+                        <div class="hour-item">
+                            <span class="hour-day">Saturday</span>
+                            <span class="hour-time">8:00 AM – 9:00 PM</span>
+                        </div>
+    
+                        <div class="hour-item">
+                            <span class="hour-day">Sunday</span>
+                            <span class="hour-time">8:00 AM – 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-heading">Contact Us</h2>
+                
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h2>Send us a message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%; padding: 15px;">Send Message</button>
+                        </form>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p style="margin-bottom: 30px;">We'd love to hear from you! Whether you have questions about our menu, want to host an event, or just want to say hello, get in touch.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Visit Us</h3>
+                                    <p>123 Coffee Street, Cityville</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>hello@jakomcafe.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Hours</h3>
+                                    <p>Mon-Fri: 7am-8pm<br>Sat: 8am-9pm<br>Sun: 8am-6pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-about">
+                        <div class="footer-logo">Jakom Café</div>
+                        <p>Artisanal coffee, house-made pastries, and light meals in a warm, modern space designed for community and connection.</p>
+                        <p>Since 2015, we've been redefining the café experience through craftsmanship, community, and conscious sourcing.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#localisation">Localisation</a></li>
+                            <li><a href="#hours">Hours</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Cityville</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> hello@jakomcafe.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 7am-8pm | Sat: 8am-9pm | Sun: 8am-6pm</p>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Jakom Café. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Link to external JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
